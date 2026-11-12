@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Menghitung Luas Persegi Panjang</h2>
+    
+    <input id="panjang" placeholder="Masukkan panjang">
+    <input id="lebar" placeholder="Masukkan lebar">
+    <button onclick="hitung()">Hitung</button>
+    <p id="hasil"></p>
+
+    <script>
+        function hitung() {
+            let p = document.getElementById("panjang").value;
+            let l = document.getElementById("lebar").value;
+            let luas = p * l;
+            document.getElementById("hasil").innerHTML = "Luas = " + luas;
+        }
+    </script>
+</body>
+</html>
